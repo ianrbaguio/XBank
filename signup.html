@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>XBank - Sign-Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/XBankCSS.css">
+        <link rel="stylesheet" type="text/css" href="css/XBankRegistration.css">
+        <link rel="stylesheet" type="text/css" href="css/XBankLoading.css">
+    </head>
+    <body>
+        <header class="text-center">
+            <h1> <a href="index.php">  <img alt="X Bank Logo" src="images/XBankLogo.png"> </a> </h1>
+        </header>
+        
+        <!--LOGIN DIV -->
+        <div id="login" class="header">
+            <a href="index.php"> Online Banking </a>
+            <a>About XBank</a> 
+       </div>
+        
+        <div id="signUp" class="container text-center signUp" style="margin-top: 50px;">
+            <h2>New Member Sign Up</h2> <br>
+            
+            <hr>
+            <form action="signup.html" id="registerform" method="post">
+                
+                <h3> Account Information </h3>
+            <fieldset>
+                <label for="newUsername"> <span class="required">Username: </span> <input class="Inputted" type="text" name="newUsername" size="20" id="newUsername"> <span id="checkUsernameSpan"></span></label>
+                <label for="newPassword"> <span class="required">Password: </span> <input class="Inputted" type="password" name="newPassword" size="20" id="newPassword"></label> <br>
+                 <label for="newPassword2" style="visibility: hidden;"> <span class="required">Password: </span> <input class="Inputted" type="password" name="newPassword2" size="20" id="newPassword2"></label>
+                <label for="confirmPassword"> <span class="required"> Confirm password: </span> <input class="Inputted" type="password" name="confirmPassword" size="20" id="confirmPassword"></label>
+                    
+            </fieldset>
+                
+                <hr>
+             
+                <h3> Personal Information </h3>
+            <fieldset>
+                <label for="FirstName"> <span class="required">First Name: </span> <input class="Inputted" type="text" name="FirstName" size="20" id="FirstName"></label> 
+                <label for="LastName"> <span class="required"> Last Name: </span> <input class="Inputted" type="text" name="LastName" size="20" id="LastName"> </label> 
+                <br>
+                <label for="Address1"> <span class="required"> Address1: </span> <input class="Inputted" type="text" name="Address1" size="20" id="Address1"> </label>
+                <label for="Address2"> Address2: <input class="Inputted" type="text" name="Address2" size="20" id="Address2"> </label> 
+                <br>
+                <label for="City"> <span class="required"> City: </span> <input class="Inputted" type="text" name="City" size="20" id="City"></label>
+                <label for="Province"> <span class="required"> Province: </span> <input class="Inputted" type="text" name="Province" size="20" id="Province"></label>
+                <br>
+                <label for="PostalCode"> <span class="required"> Postal Code: </span> <input class="Inputted" type="text" name="PostalCode" size="20" id="PostalCode"> </label>
+                <label for="Phone"> <span class="required"> Phone: </span> <input class="Inputted" type="text" name="Phone" size="20" id="Phone"> </label>
+                <br>
+                <label for="Email"> <span class="required"> Email: </span> <input class="Inputted" type="text" name="Email" size="20" id="Email"> </label>
+                <label for="Birthdate"> <span class="required"> Birthday: </span> <input type="date" name="Birthdate" id="Birthdate"> </label>
+                <br>
+                <label for="SecurityQuestion"> <span class="required"> Security Question: </span> <input type="text" name="SecurityQuestion" size="20" id="SecurityQuestion"></label>
+                <label for="SQAnswer"> <span class="required"> Answer: </span> <input type="text" name="SQAnswer" size="20" id="SQAnswer"> </label>
+                
+            </fieldset>
+                
+                <p><b>WARNING: </b> Avoid entering any actual personal information, this is only for testing purposes.</p>        
+            <hr>
+            
+            <h3> Bank Account </h3>
+                <fieldset>
+                    <label for="Chequing"> Chequing: <input type="text" name="Chequing" size="20" id="Chequing" placeholder="0.00" style="text-align:right;"> </label>
+                    <label for="Savings"> Savings: <input type="text" name="Savings" size="20" id="Savings" placeholder="0.00" style="text-align:right;"> </label>
+                </fieldset>
+            
+            <p> <b> NOTE: </b> This are only simulation currency. Not REAL MONEY</p>
+            
+            
+            <input class="Blue-button" type="button" value="register" name="submit" id="register" onClick="Validator()">
+            <input class="Cancel-button" type="button" value="cancel" name="cancel" id="cancel" onClick="document.location.href='index.php'" style="margin-bottom: 50px;">
+            </form>
+            
+            <p id="errorstatus"> </p>
+            
+       </div>
+        
+            <div id='footer'>
+                <hr>
+            © Ian Baguio <br>
+            Date Created: January 31, 2018 <br>
+            Date Modified: January 9, 2019 <br>
+            <img src="images/XBankLogo.png" alt="XBank">
+            </div>
+        <script src="javascript/XBankServerJS.js" type="text/javascript"></script>
+    </body>
+</html>
