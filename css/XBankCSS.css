@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 31, 2018, 12:33:35 PM
+    Author     : Ian Baguio
+*/
+
+
+.header{
+    background-color: blue;
+    width: 100%;
+    height: 4%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+
+}
+
+.header a{
+    color:white;
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.header a:hover
+{
+    color: yellow;
+}
+
+.login
+{
+    background-color: blue;
+    margin-top: 50px;
+    color: white;
+}
+
+.signUp
+{
+    margin-top: 75px;
+}
+
+.registration
+{
+    margin-right: 50px;
+    margin-bottom: 25px;
+    display: inline;
+}
+
+.required
+{
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+.pInLine
+{
+    margin-right: 50px;
+    display: inline;
+}
+
+.required:after
+{
+    content: "*";
+    color:red;
+}
+
+.sign_in_div
+{
+    float: left;
+    width: 50%;
+    border-right: 1px solid white;
+}
+
+.newMember
+{
+    float: right;
+    width: 50%;
+    border-left: 1px hidden white;
+    margin-left: -1px;
+}
+
+.current_header{
+    background-color:white; 
+    color:black;
+}
+/****** INDEX PAGE ******/
+.login_button{
+    background-color:yellow; 
+    color:black; 
+    margin-left: 100px; 
+    margin-top: 10px; 
+    width: 100px;
+}
+
+.signup_button{
+    background-color:yellow; 
+    color:black; 
+    margin-left: 10px; 
+    width: 200px;
+}
+
+@media only screen and (max-width: 400px){
+    
+    .sign_in_div{
+        float:none;
+        width:100%;
+        border-bottom: 1px solid white;
+        border-right:none;
+    }
+    
+    .newMember{
+        float:none;
+        margin-bottom: 10px;
+        text-align:center;
+        width:100%;
+    }
+    
+    .new_member_h3{
+        text-align:center;
+        margin-left:30px;
+    }
+}
+
+
+/***** END OF INDEX PAGE *****/
+.new_member_h3{
+    margin-left: 5px;
+}
+/****** ABOUT XBANK PAGE *******/
+.sidenav{
+    width: 160px; 
+    height: 180px;
+    /*border: 1px navy solid;*/
+    background-color:blue;
+    color: white;
+    border-radius: 10px;
+    font-weight:bold;
+    margin-top: 10px; 
+    margin-left: 10px;
+    float:left;
+    /*position: fixed;*/
+}
+
+.sidenav span
+{
+    display: block;
+    padding: 10px 0 10px 25px; 
+    font-size: 12px;
+}
+
+
+.sidenav a
+{
+    display: block;
+    padding: 5px 0 0 0; 
+    color:yellow;
+}
+
+.date_modified
+{
+    font-weight:bold;
+    font-size: 15px;
+}
+
+.references_header
+{
+    font-weight:bold;
+    font-size:15px;
+}
+
+/****** END OF ABOUT XBANK PAGE ****/
+
+#footer img
+{
+    width: 100px;
+    height: 100px;
+}
+#footer
+{
+    text-align: center;
+    font-size: 8px; 
+    bottom: 0;
+    position:relative;
+    width:100%;
+}
+
+
+

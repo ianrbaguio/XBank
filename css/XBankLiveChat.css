@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8-Jul-2018, 3:31:50 PM
+    Author     : Ronan
+*/
+
+.live_chat_container{
+    margin-left:200px; 
+    padding:25px; 
+    width:100%;
+}
+
+.live_chat_connected_div{
+    float:right; 
+    width:50%; 
+    margin-top: 25px; 
+}
+
+.live_chat_messages_div{
+    float:left; 
+    width:50%
+}
+
+.live_chat_chat_messages{
+    border: 1px solid black; 
+    height:250px; 
+    width: 90%; 
+    margin-top: 25px; 
+    overflow:scroll; 
+    overflow-x: hidden;
+}
+
+.live_chat_text_area{
+    resize:none; 
+    vertical-align: middle;
+    width:78%;
+    height: 10%;
+}
+
+.live_chat_send_button{
+    background-color:blue; 
+    color:yellow; 
+    font-weight:bold; 
+    width:75px; 
+    height: 55px;
+}
+
+.live_chat_admin_loading_div{
+    margin-top: 10px; 
+    text-align:center; 
+    font-size:12px;
+}
+
+.live_chat_page_loading_div{
+    width:40px; 
+    height:40px;
+}
+
+@media (max-width:600px){
+    
+    .live_chat_container{
+        margin-left:5%;
+        padding: 0;
+    }
+    
+    .live_chat_connected_div{
+        margin-left: 25%;
+    }
+    
+    .live_chat_connected_div, .live_chat_messages_div{
+        float:none;
+        width:100%;
+    }
+    
+    .live_chat_text_area{
+        width:90%;
+    }
+    
+    .live_chat_send_button{
+        margin-left:25%;
+        margin-top:1%;
+    }
+}

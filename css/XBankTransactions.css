@@ -1,0 +1,207 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1-May-2018, 11:35:09 PM
+    Author     : Ronan
+*/
+
+/**************************************************
+            TABLE CSS
+**************************************************/
+
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    font-weight: bold;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.AccountInfoTR
+{
+    border: 1px black solid;
+}
+
+.header{
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+
+}
+
+.transaction_amount{
+    margin-top: 10px; 
+    color:black; 
+    text-align: right;
+}
+
+/* Inline Informations by colons */
+#TransactionInfos dt
+{
+    display: block;
+    float: left;
+    width: 85px;
+    padding-left: 10px;
+}
+
+#TransactionInfos dt:after
+{
+    content: ': ';
+}
+
+#TransactionInfos dd
+{
+    font-weight: bold;
+}
+
+.OptionButtons
+{
+    background-color:yellow;
+    color: blue;
+    margin-left: 10px;
+}
+
+.OptionButtons:hover
+{
+    background-color: #cccc00;
+}
+
+.ProcessButton
+{
+    background-color: #3366ff;
+    color: yellow;
+}
+
+.ProcessButton:hover{
+    background-color: blue;
+}
+
+/* DropDowns spaces(margin/padding) */
+.DropDownOptions
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 175px;
+    color: black;
+}
+
+/************ LOADING *************/
+.loader{
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/******** PAGINATION *****/
+/* Pagination links */
+
+#paginationDiv
+{
+    margin-left:auto;
+    margin-right:auto;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    text-align:center;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Add a grey background color on mouse-over */
+/* Pagination links */
+
+#paginationDiv
+{
+    margin-left:auto;
+    margin-right:auto;
+    width:25%;
+}
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+
+/*Shows or Hides Column from mobile phone (shows only Description and Balance on mobiles) */
+
+
+@media only screen and (max-width: 400px){
+
+    .mobile_column{
+        display:none;
+    }
+    
+    .transaction_amount{
+        margin-left: 10px;
+        margin-bottom:10px;
+    }
+}
+
+
+/******** FOOTER ******/
+#footer img
+{
+    width: 100px;
+    height: 100px;
+}
+
+#footer
+{
+    text-align: center;
+    font-size: 8px; 
+}

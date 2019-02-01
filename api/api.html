@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>XBank API Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="APIDiv" style="text-align: center; margin:10px;">
+            <div id="APINoteDiv">
+                <b>NOTE:</b> Currently working on having the XBank API to work with authentication. At the moment anyone can use the API if they like.
+            </div>
+            <div id="APIReadDiv" style="margin-top:10px;">
+                <h2>READ</h2>
+                <div>
+                    The READ function is a GET method. There are 3 ways to use the read function method:
+                </div>
+                <h4>1. ClientID parameter</h4>
+                <div>
+                    Using the ClientID parameter will get all both of client's chequing and savings account details.
+                    Here is an example using from the postman's app: <br/>
+                    <img src='../images/XBank_Read_API_ClientID.PNG' alt='READ ClientID API' />
+                </div>
+                <h4>2. SavingsID parameter</h4>
+                <div>
+                    Using the SavingsID parameter will get the client's savingsID and savingsBalance.
+                    Here is an example using from the postman's app: <br/>
+                    <img src='../images/XBank_Read_API_SavingsID.PNG' alt='READ SavingsID API' />
+                </div>
+                <h4>3. ChequingID parameter</h4>
+                <div>
+                    Using the ChequingID parameter will get the client's chequingID and chequingBalance.
+                    Here is an example using from the postman's app: <br/>
+                    <img src='../images/XBank_Read_API_ChequingID.PNG' alt='READ ChequingID API' />
+                </div>
+            </div>
+            <div id='APITransactionDiv'>
+                <h2>TRANSACTION</h2>
+                <div>
+                    The TRANSACTION function is a POST method. It has six parameters:
+                    <ol style='text-align: left; width:35%; margin:10px auto;'>
+                        <li>transactDescription - Your description of the transaction</li>
+                        <li>amount - Amount must be greater than 0</li>
+                        <li>accountUserID - ClientID for XBank</li>
+                        <li>accountType (chequing or savings) - Account type will be using for the transaction</li>
+                        <li>accountID (chequingID or savingsID) - The accountID of the account will be using for the transaction</li>
+                        <li>transferAccountType (chequing or savings) - Account type of the account will be transfer the amount to</li>
+                        <li>transferAccountID - The accountID of the account will be transfering to</li>
+                    </ol>
+                    <br/>
+                    Here is an example with it's outputs using from the postman's app: <br/>
+                    <img src='../images/XBank_Transaction_API.PNG' alt='TRANSACTION API' />
+                </div>
+            </div>
+            <div>
+                Any feedsback or suggestion for the API, please feel free to give a feedback <a href='../AboutXBank.php'>here</a>.
+            </div>
+        </div>
+    </body>
+</html>
+
+
